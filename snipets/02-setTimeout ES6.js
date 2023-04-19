@@ -1,10 +1,7 @@
-class Saludo {
-  constructor(nombre) {
-    this.nombre = nombre;
-  }
-  hola() {
-    return `Hola, ${this.nombre}`;
-  }
+console.log('hola');
+for (let i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, i * 1000);
 }
-const saludo = new Saludo('pepe');
-console.log(saludo.hola());
+console.log('adios');

@@ -1,9 +1,7 @@
-/** Clase con prototype ES5 */
-function Saludo(nombre) {
-  this.nombre = nombre;
+console.log('hola');
+for (var i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, i * 1000);
 }
-Saludo.prototype.hola = function () {
-  return 'Hola, ' + this.nombre;
-};
-const saludo = new Saludo('pepe');
-console.log(saludo.hola());
+console.log('adios');
